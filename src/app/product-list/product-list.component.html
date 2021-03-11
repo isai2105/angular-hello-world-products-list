@@ -12,6 +12,9 @@
   <button (click)="share()">
     Share
   </button>
+  <!-- This is how a child component is called -->
+  <app-product-alerts [product]="product" (notify)="onNotify()">>
+  </app-product-alerts>
 </div>
 
 <!-- 
